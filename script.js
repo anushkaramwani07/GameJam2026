@@ -1,5 +1,3 @@
-alert("Javascript is working!");
-
 //Game variables
 let score = 0; //tracks current points
 let isJumping = false; //prevents double jumps
