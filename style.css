@@ -14,7 +14,7 @@ h1
 
 }
 
-b1 
+h2
 {
 
         text-align: center;
@@ -24,6 +24,16 @@ b1
         color: whitesmoke;
 
 }
+
+p
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+
+}
+
 
 #gameArea
 {
