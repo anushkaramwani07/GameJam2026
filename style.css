@@ -23,7 +23,7 @@ h1
     overflow: hidden;
 }
 
-#player
+#player 
 {
     position: absolute;
     left: 50px;
@@ -32,11 +32,25 @@ h1
     transition: bottom 0.3s;
 }
 
+#player img
+{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
 #hunter
 {
     position: absolute;
     bottom: 10px;
     font-size: 65px;
+}
+
+#hunter img
+{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
 }
 
 #scoreBoard
