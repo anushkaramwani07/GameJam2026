@@ -11,7 +11,7 @@ let gameArea = document.getElementById("gameArea");
 
 //Hunter variables
 let hunterX = 0;
-let hunterSpeed = 5;
+let hunterSpeed = 3;
 
 //User presses Space to jump
 function jump()
@@ -20,7 +20,7 @@ function jump()
     {
         isJumping = true;
 
-        player.style.bottom = "130px"; //changes the player's position
+        player.style.bottom = "180px"; //changes the player's position
 
         setTimeout(function()
         {
@@ -29,7 +29,7 @@ function jump()
 
             isJumping = false;
 
-        }, 600);
+        }, 900);
     }
 }
 
@@ -46,6 +46,12 @@ function moveHunter()
 
         score++;
 
+        //Increases the speed of the hunter every 2 points
+        if(score % 2 == 0)
+        {
+            hunterSpeed++;
+        }
+        
         updateScore();
     }
 
